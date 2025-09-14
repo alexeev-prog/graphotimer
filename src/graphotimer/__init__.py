@@ -381,12 +381,6 @@ class PlotlyVisualizer:
                 height=900, showlegend=True, title_text="Time Distribution Analysis"
             )
             fig.show()
-
-        except ImportError:
-            log_error(
-                "Plotly is not installed. Please install it with 'pip install plotly'",
-                console,
-            )
         except Exception as error:
             log_error(f"Error creating Plotly plot: {error}", console)
 
